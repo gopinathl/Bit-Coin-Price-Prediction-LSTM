@@ -19,7 +19,7 @@ Dataset : https://drive.google.com/drive/folders/1yqdapRdmluuoHFQeE_6UIJOb75GqRp
 
 The main pre-processing technique used here is converting the data into uniform time intervals. The data initially had missing data for multiple minutes and the difference between  time intervals had high variation. Therefore, a predefined time interval of 200 milliseconds is set using the mean of the difference between the timestamps.
 
-Imputing the missing value with mean/mode of the prices would be irrelevant for bitcin prices. Instead of filling the previous bitcoin price(backward filling) in the data, a function is used to compute a set of values for the steady increase/decrease of the stock prices for the time period of missing prices. This ensures that there won't be a sudden fluctuation even when the data is missing for a few minutes.
+Imputing the missing value with mean/mode of the prices would be irrelevant for bitcoin prices. Instead of filling the previous bitcoin price(backward filling) in the data, a function is used to compute a set of values for the steady increase/decrease of the stock prices for the time period of missing prices. This ensures that there won't be a sudden fluctuation even when the data is missing for a few minutes.
 
 ## Time based Splitting
 
